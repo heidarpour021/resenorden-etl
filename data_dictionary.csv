@@ -1,0 +1,28 @@
+kolumn,datatyp,saknade,unika_värden,exempel,beskrivning
+bokning_id,object,0,1915,"RES-2024-00001, RES-2024-00002, RES-2024-00003",
+bokningsdatum,datetime64[ns],7,335,"2024-01-08, 2024-01-26, 2024-01-13",Datum då bokningen gjordes (konverterad till datum).
+kund_id,object,0,1206,"KUND-05456, KUND-05177, KUND-06857",
+destination,object,0,8,"köpenhamn, rovaniemi, tromso",
+land,object,0,4,"Danmark, Finland, Norge",
+avresedatum,datetime64[ns],8,391,"2024-01-13, 2024-03-06, 2024-02-09",Datum då resan startar.
+hemresedatum,datetime64[ns],7,389,"2024-01-15, 2024-03-11, 2024-02-14",
+antal_resenärer,int64,0,7,"2, 3, 1",
+pakettyp,object,0,4,"weekend, all inclusive, halvpension",
+pris,float64,0,1894,"8046.1, 34924.8, 26757.6",Pris för bokningen.
+valuta,object,0,5,"SEK, EUR, DKK","Valuta, ifylld baserat på land om saknas."
+hotell,object,0,21,"Comfort Hotel Vesterbro, Scandic Rovaniemi, Clarion Hotel The Edge",
+bokningskanal,object,0,4,"app, telefon, webb",
+status,object,0,4,"genomförd, avbokad, bekräftad","Bokningsstatus, normaliserad."
+avbokningsdatum,datetime64[ns],1760,125,"2024-02-20, 2024-01-28, 2024-02-16",
+recension_text,object,1234,69,"Inget speciellt att rapportera, det fungerade., All inclusive var värt pengarna. Inga bekymmer., Smidigt att boka och allt fungerade perfekt.",
+recensionsdatum,datetime64[ns],1234,306,"2024-01-30, 2024-04-01, 2024-02-19",
+betyg,float64,1234,5,"3.0, 4.0, 5.0",
+boknings_manad,float64,7,12,"1.0, 2.0, 3.0",
+boknings_veckodag,float64,7,7,"0.0, 4.0, 5.0",
+ar_helgbokning,int64,0,2,"0, 1",
+ledtid_dagar,float64,15,80,"5.0, 40.0, 27.0",Antal dagar mellan bokning och avresa.
+reslangd_dagar,float64,15,9,"2.0, 5.0, 3.0",Resans längd i dagar.
+ar_avbokad,bool,0,2,"False, True",True om bokningen är avbokad.
+intakt,float64,0,1739,"8046.1, 34924.8, 26757.6",Intäkt (0 om avbokad).
+har_recension,bool,0,2,"True, False",
+har_betyg,bool,0,2,"True, False",
